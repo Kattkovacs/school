@@ -5,8 +5,9 @@ import java.util.Set;
 import static com.katt.school.security.ApplicationUserPermission.*;
 
 public enum ApplicationUserRole {
-    ADMIN(Sets.newHashSet()),
-    STUDENT(Sets.newHashSet(COURSE_READ, COURSE_WRITE, STUDENT_READ, STUDENT_WRITE));
+    STUDENT(Sets.newHashSet()),
+    ADMIN(Sets.newHashSet(COURSE_READ, COURSE_WRITE, STUDENT_READ, STUDENT_WRITE)),
+    ADMINTRAINEE(Sets.newHashSet(COURSE_READ, STUDENT_READ));
 
     private final Set<ApplicationUserPermission> permissions;
 
