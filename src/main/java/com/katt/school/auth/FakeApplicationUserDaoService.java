@@ -12,6 +12,7 @@ import static com.katt.school.security.ApplicationUserRole.*;
 
 @Repository("fake")
 public class FakeApplicationUserDaoService implements ApplicationUserDao{
+
     private final PasswordEncoder passwordEncoder;
 
     @Autowired
